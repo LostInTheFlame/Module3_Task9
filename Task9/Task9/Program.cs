@@ -33,7 +33,7 @@ namespace Task9
 
             int m = 0;
             int checkElements = parsedRow * parsedColumn - 1;
-            for (int count = 0, rowInArray = parsedRow - 1, columnInArray = parsedColumn - 1; count < 8; count++, rowInArray--, columnInArray--)
+            for (int count = 0, rowInArray = parsedRow - 1, columnInArray = parsedColumn - 1; m<=checkElements; count++, rowInArray--, columnInArray--)
             {
                 for (int i = count, j = count; j <= columnInArray && m <= checkElements; j++)
                 {
@@ -68,7 +68,6 @@ namespace Task9
                 }
                 Console.WriteLine();
             }
-
             Console.ReadKey(true);
         }
     }
